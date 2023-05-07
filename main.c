@@ -89,7 +89,33 @@ User loginUser(char *nama_user, char *kata_sandi)
     return userKosong;
 }
 
-char kunciJawaban[] = {
+void startKuis()
+{
+    char *pertanyaan[] = {
+        "Apa ibu kota Indonesia?",
+        "Siapa presiden Indonesia ke-1?",
+        "Apa singkatan dari nama partai politik yang menggunakan logo banteng?",
+        "Pahlawan nasional yang dikenal sebagai Bapak Teknologi Indonesia adalah?",
+        "Siapa pencipta lagu kebangsaan Indonesia Raya?",
+        "Gunung tertinggi di Indonesia adalah?",
+        "Nama alat musik khas Bali yang terbuat dari bambu adalah?",
+        "Pulau terbesar di Indonesia adalah?",
+        "Istilah yang digunakan untuk menyebut pakaian adat dari Jawa adalah?",
+        "Makanan khas dari Sumatera Barat yang berbahan dasar daging dan bumbu kari adalah?"};
+
+    char *pilihan[][4] = {
+        {"Jakarta", "Surabaya", "Medan", "Bandung"},
+        {"Soeharto", "BJ Habibie", "Soekarno", "Susilo Bambang Yudhoyono"},
+        {"Golkar", "PDIP", "Gerindra", "PKB"},
+        {"Jusuf Kalla", "BJ Habibie", "Gatot Soebroto", "Sudirman"},
+        {"Ismail Marzuki", "Chairil Anwar", "WR Supratman", "Tan Malaka"},
+        {"Gunung Semeru", "Gunung Slamet", "Gunung Rinjani", "Gunung Jaya Wijaya"},
+        {"Angklung", "Gamelan", "Sasando", "Kolintang"},
+        {"Sumatera", "Kalimantan", "Jawa", "Papua"},
+        {"Kebaya", "Batik", "Beskap", "Ulos"},
+        {"Rendang", "Gulai", "Soto Padang", "Pempek"}};
+
+    char kunciJawaban[] = {
         'a', 'c', 'b', 'b', 'c',
         'd', 'a', 'b', 'c', 'a'};
     char jawaban;
