@@ -102,8 +102,20 @@ void startKuis()
         "Pulau terbesar di Indonesia adalah?",
         "Istilah yang digunakan untuk menyebut pakaian adat dari Jawa adalah?",
         "Makanan khas dari Sumatera Barat yang berbahan dasar daging dan bumbu kari adalah?"};
+    
+    char *pilihan[][4] = {
+        {"Jakarta", "Surabaya", "Medan", "Bandung"},
+        {"Soeharto", "BJ Habibie", "Soekarno", "Susilo Bambang Yudhoyono"},
+        {"Golkar", "PDIP", "Gerindra", "PKB"},
+        {"Jusuf Kalla", "BJ Habibie", "Gatot Soebroto", "Sudirman"},
+        {"Ismail Marzuki", "Chairil Anwar", "WR Supratman", "Tan Malaka"},
+        {"Gunung Semeru", "Gunung Slamet", "Gunung Rinjani", "Gunung Jaya Wijaya"},
+        {"Angklung", "Gamelan", "Sasando", "Kolintang"},
+        {"Sumatera", "Kalimantan", "Jawa", "Papua"},
+        {"Kebaya", "Batik", "Beskap", "Ulos"},
+        {"Rendang", "Gulai", "Soto Padang", "Pempek"}};
 
-char kunciJawaban[] = {
+    char kunciJawaban[] = {
         'a', 'c', 'b', 'b', 'c',
         'd', 'a', 'b', 'c', 'a'};
     char jawaban;
